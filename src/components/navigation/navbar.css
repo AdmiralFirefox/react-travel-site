@@ -1,0 +1,223 @@
+/* Mobile View */
+
+.mobileNavWrapper {
+    width: 100%;
+}
+
+.webName {
+    display: flex;
+    align-items: center;
+    margin-left: 0.5em;
+}
+
+.webName h3 {
+    color: white;
+    font-size: 2rem;
+}
+
+.navHam {
+    margin-right: 0.3em;
+}
+
+.mobileNavContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.mobileNavContent img {
+    width: 35px;
+}
+
+.navComponents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 3em;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: fixed;
+    width: 100%;
+    top: -100%;
+    /* height: 100%; */
+    transition: all .8s ease-in-out;
+    z-index: 2;
+}
+
+.navComponents a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* line-height: 3em; */
+    padding: 0.3em;
+}
+
+.navComponents a:hover {
+    color: white;
+    background: #555;
+    text-decoration: none;
+}
+
+.navComponentsMobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 3em;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: fixed;
+    width: 100%;
+    top: 45px;
+    /* height: 100%; */
+    transition: all .8s ease-in-out;
+    z-index: 2;
+}
+
+.navComponentsMobile a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* line-height: 3em; */
+    padding: 0.3em;
+}
+
+.navComponentsMobile a:hover {
+    color: white;
+    background: #555;
+    text-decoration: none;
+}
+
+.signButtonWrapper a:hover {
+    background: none;
+}
+
+.signButtonWrapper {
+    padding-bottom: 1.1em;
+}
+
+#signUpButton {
+    width: 40vw;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+#signUpButton:focus {
+    box-shadow: none!important;
+}
+
+/* Desktop View */
+
+.desktopNavWrapper {
+    width: 100%;
+}
+
+.desktopNavContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    background: transparent;
+}
+
+.desktopNavContent.active {
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: all 2s ease-in-out; 
+    position: fixed;
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.webNameDesktop {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.webNameDesktop h3 {
+    color: white;
+    font-size: 2rem;
+}
+
+.desktopNavContent img {
+    width: 35px;
+}
+
+.desktopNavComponents {
+    display: flex;
+    align-items: center;
+}
+
+.desktopNavComponents a {
+    color: white;
+    padding: 0px 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.desktopNavComponents a:hover { 
+    color: lightgray;
+    border: none;
+    text-decoration: none;
+}
+
+.desktopNavComponents.active a:hover {
+    color: white;
+    text-decoration: none;
+    border-bottom: 5px solid white;
+    padding-bottom: 15px;
+}
+
+.desktopNavComponents.active .desktopSignUpWrapper a:hover {
+    border: none;
+}
+
+.desktopSignUpWrapper {
+    padding: 0px 15px;
+}
+
+.desktopSignUpWrapper a {
+    padding: 0;
+}
+
+.desktopSignUpWrapper a:hover {
+    border: none;
+}
+
+#desktopSignUpButton {
+    font-weight: bold;
+    border: 3px solid white;
+    font-size: 1em;
+    border-radius: 10px;
+}
+
+#desktopSignUpButton:focus {
+    box-shadow: none;
+}
+
+
+

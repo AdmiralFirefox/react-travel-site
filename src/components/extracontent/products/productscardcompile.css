@@ -1,0 +1,33 @@
+.productsCardWrapper {
+  width: 100%;
+}
+
+.productsCardContent {
+  position: absolute;
+  width: 100%;
+  bottom: -97em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.8);
+}
+
+.productsCardRow {
+  display: grid;
+  gap: 1em;
+}
+
+@media (min-width: 767px) {
+  .productsCardContent {
+    transform: scale(1);
+    position: absolute;
+    width: 100%;
+    bottom: -70em;
+  }
+
+  .productsCardRow {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 3em;
+  }
+}

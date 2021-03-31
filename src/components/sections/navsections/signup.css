@@ -1,0 +1,159 @@
+.signUpBG {
+  background: url("../../extracontent/signup/signupassets/signUpBG.jpg")
+    rgba(0, 0, 0, 0.253);
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  overflow-x: hidden;
+}
+
+/* General */
+
+.signUpContentWrapper {
+  width: 100%;
+}
+
+.signUpContentPosition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.signUpContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 7.5em;
+}
+
+.signUpSignUp {
+  transform: scale(0.85);
+}
+
+/* Mobile */
+
+.signUpPhotoCard {
+  display: none;
+}
+
+#penImg {
+  width: 4.5em;
+  margin-top: -4em;
+}
+
+#cardContent {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 2em;
+  border-radius: 25px;
+  color: white;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Name Input */
+
+#nameInput {
+  margin-top: 1em;
+}
+
+/* Credentials Input */
+
+#credentialsInput {
+  margin-top: 1em;
+  width: 225px;
+}
+
+/* TOS */
+
+.signUpTOS {
+  display: flex;
+  text-align: left;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+/* Button */
+
+.signUpButtonWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+#signUpCardButton {
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: 3px solid white;
+  border-radius: 5px;
+}
+
+#signUpCardButton:focus {
+  box-shadow: none !important;
+}
+
+/* Desktop */
+
+@media (min-width: 767px) {
+  .signUpPhotoCard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .signUpSignUp {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .signUpPhotoCardImg {
+    background: url("../../extracontent/signup/signupassets/signupDesign.jpg")
+      rgba(0, 0, 0, 0.5);
+    width: 380px;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+
+  .signUpPhotoCardImg h1 {
+    color: white;
+    text-align: center;
+    margin-top: 6em;
+  }
+
+  #credentialsInput {
+    width: 390px;
+  }
+
+  #cardContent {
+    border-radius: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+}
+
+/* Card Compile */
+
+.signUpCardCompile {
+  width: 100%;
+  margin-top: 8vh;
+  background: white;
+}

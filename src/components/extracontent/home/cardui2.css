@@ -1,0 +1,31 @@
+#cardHomeUI2 {
+  width: 16em;
+  border-radius: 8px;
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253) !important;
+}
+
+#cardHomeOverflow2 {
+  overflow: hidden;
+  border-radius: 0;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  box-shadow: none !important;
+}
+
+#cardUIImg2 {
+  transition: all 0.4s ease-in-out;
+}
+
+#cardUIImg2:hover {
+  transform: scale(1.8);
+}
+
+.cardUIContent2 {
+  padding: 0.5em;
+}
+
+@media (min-width: 54em) {
+  #cardHomeUI2 {
+    width: 16.2rem;
+  }
+}

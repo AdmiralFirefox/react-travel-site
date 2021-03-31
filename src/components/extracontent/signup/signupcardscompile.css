@@ -1,0 +1,55 @@
+.signUpCardCompileWrapper {
+  width: 100%;
+}
+
+.signUpCardCompileContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.9);
+  margin-top: -4em;
+}
+
+.signUpCardCompileContent h1 {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.signUpCardCompileRow {
+  display: grid;
+  gap: 2.5em;
+}
+
+@media (min-width: 881px) {
+  .signUpCardCompileRow {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .signUpCardCompileContent {
+    margin-top: -1em;
+  }
+}
+
+/* Card Button */
+
+#subscribeButton {
+  font-size: 1rem;
+  font-weight: bold;
+  border: 3px solid white;
+}
+
+#subscribeButton:focus {
+  box-shadow: none !important;
+}
+
+/* Individual Cards */
+
+#cardCompileUI {
+  transition: all 0.4s ease-in-out;
+}
+
+#cardCompileUI:hover {
+  transform: scale(1.1);
+}

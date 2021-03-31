@@ -1,0 +1,38 @@
+.overlay {
+  width: 100%;
+}
+
+.overlayContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 0, 0, 0.4);
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.overlayContent:hover {
+  opacity: 1;
+  backdrop-filter: blur(2px);
+}
+
+.overlayContent h2 {
+  color: white;
+}
+
+#productButtons {
+  margin: 0.3em;
+  font-weight: bold;
+}
+
+#productButtons:focus {
+  box-shadow: none !important;
+}
+
+.productsCard:hover {
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253);
+}

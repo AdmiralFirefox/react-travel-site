@@ -1,0 +1,24 @@
+.productsContentWrapper {
+  position: absolute;
+  width: 100%;
+  background: url("../../extracontent//products/productassets/products.jpg") rgba(0,0,0,0.253);
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.productsContent {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.productsContent h1 {
+    color: white;
+}
+

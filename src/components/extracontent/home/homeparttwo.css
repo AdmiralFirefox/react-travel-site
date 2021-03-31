@@ -1,0 +1,21 @@
+.homePartTwoContentWrapper {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: white;
+    height: 30vh;
+}
+
+.homePartTwoContent h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+@media (min-width: 820px) {
+    .homePartTwoContent h2 {
+        font-size: 2.8rem;
+        margin-top: 0.5em;
+    }
+}

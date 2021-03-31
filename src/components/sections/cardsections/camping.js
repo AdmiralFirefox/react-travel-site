@@ -1,0 +1,50 @@
+import React, { Component } from "react";
+import "./camping.css";
+import Camping from "../../assets/camping.jpg";
+import { Link } from "react-router-dom";
+
+class CardCamping extends Component {
+  render() {
+    return (
+      <div className="hikingContentWrapper">
+        <div className="hikingContent">
+          <div className="hikingImgWrapper">
+            <img src={Camping} alt="hiking" />
+            <Link to="/">
+              <div className="backToHome">
+                <h3>
+                  <i class="fas fa-arrow-alt-circle-left"></i>
+                </h3>
+              </div>
+            </Link>
+          </div>
+          <div className="hikingInfo">
+            <div className="hikingInfoWrapper">
+              <div className="cardTitle">
+                <h1>Camp and see the beautiful sunrise in the horizon</h1>
+              </div>
+              <div className="hikingBorderContent">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Incidunt, fugit praesentium. Aperiam fugiat alias autem quasi
+                  natus voluptate ad? Corrupti doloribus aperiam debitis at
+                  laborum placeat veniam asperiores reprehenderit odit. Lorem
+                  ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div className="hikingButtonWrapper">
+                <Link to="/signup">
+                  <button className="hikingButton">
+                    <h4>Camp Now!</h4>
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default CardCamping;

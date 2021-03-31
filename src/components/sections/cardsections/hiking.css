@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+.hikingContentWrapper {
+  width: 100%;
+}
+
+.hikingContent {
+  display: grid;
+  height: 100vh;
+}
+
+.hikingImgWrapper img {
+  width: 100%;
+  height: 25em;
+  object-fit: cover;
+}
+
+.hikingInfo {
+  width: 100%;
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #243b55,
+    #141e30
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+
+.hikingInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title */
+
+.cardTitle {
+  margin-top: 0.8em;
+  text-align: center;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardTitle h1 {
+  font-size: 2rem;
+  font-family: "Dancing Script", cursive;
+}
+
+.cardTitle::after {
+  content: "";
+  background: #fff;
+  display: block;
+  margin-top: 0.3em;
+  width: 20%;
+  height: 0.31em;
+}
+
+.hikingBorderContent {
+  text-align: center;
+  border: 3px dashed #fff;
+  margin: 1.5em 1.5em 1em 1.5em;
+  padding: 1em;
+}
+
+/* Button */
+
+.hikingButtonWrapper {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.hikingButton {
+  background: none;
+  border: 3px solid #fff;
+  color: #fff;
+  padding: 0.4em 1em;
+  position: relative;
+  z-index: 2;
+  transition: all 0.7s ease-in-out;
+  box-shadow: inset 0 0 0 0 #fff;
+}
+
+.hikingButton:hover {
+  box-shadow: inset 10em 0 0 0 #fff;
+  color: #000;
+}
+
+@media (min-width: 48em) {
+  .hikingContent {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    height: 100vh;
+  }
+
+  .hikingImgWrapper img {
+    height: 100%;
+  }
+
+  .hikingInfoWrapper {
+    margin-top: 3.2em;
+  }
+
+  .cardTitle h1 {
+    font-size: 3rem;
+  }
+}
+
+.backToHome {
+  position: absolute;
+  top: 3.5em;
+  margin-left: 0.9em;
+}
+
+.backToHome:hover {
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+  animation: rotate-center 0.6s ease-in-out both;
+}
+
+.backToHome h3 {
+  font-size: 2.5rem;
+  color: #28536B;
+}
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,47 @@
+.cardHomeContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardHomeRow1 {
+  display: grid;
+  gap: 1.5em;
+  margin-bottom: 1.5em;
+  margin-top: 2em;
+}
+
+.cardHomeRow2 {
+  display: grid;
+  gap: 1.5em;
+  margin-bottom: 6em;
+}
+
+@media (min-width: 54em) {
+  .cardFluidContainer {
+    width: 100%;
+  }
+
+  .cardHomeContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardHomeRow1 {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1.5em;
+    margin-bottom: 1.5em;
+    margin-top: 2em;
+  }
+
+  .cardHomeRow2 {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 1.5em;
+    margin-bottom: 3.5em;
+  }
+}

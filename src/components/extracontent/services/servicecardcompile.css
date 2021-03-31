@@ -1,0 +1,34 @@
+.serviceFluidContainer {
+    width: 100%;
+}
+
+.serviceCardContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.5em;
+    margin-top: 2em;
+}
+
+.serviceCards {
+    display: grid;
+    grid-row-gap: 3em;
+}
+
+@media (min-width: 767px) {
+    .serviceCardContent {
+        margin-top: 3.5em;
+    }
+
+    .serviceCards {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-column-gap: 8em;
+        transform: scale(1.2);
+    }
+
+    .serviceCardContent {
+        margin-top: 6em;
+        padding-bottom: 6em;
+    }
+}

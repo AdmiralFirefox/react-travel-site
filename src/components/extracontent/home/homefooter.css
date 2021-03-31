@@ -1,0 +1,148 @@
+.homeFooterContent {
+    width: 100%;
+    margin-top: -2em;
+}
+
+.homeFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.footerTitles {
+    text-align: center;
+    color: white;
+}
+
+.footerTitles h3:nth-child(1) {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.footerTitles h3:nth-child(2) {
+    margin-bottom: 1em;
+}
+
+.footerTitles h3 {
+    font-size: 1.4rem;
+}
+
+#homeSubscription {
+    display: flex;
+    align-items: center;
+}
+
+#homeTextbox {
+    width: 30vw;
+}
+
+#homeTextbox:focus {
+    box-shadow: none!important;
+}
+
+#homeSubscribeButton {
+    margin-left: 0.5em;
+    z-index: 1;
+}
+
+#homeSubscribeButton {
+    font-weight: bold;
+    border: 3px solid white;
+}
+
+#homeSubscribeButton:focus {
+    box-shadow: none!important;
+}
+
+.footerLinksWrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-top: 1em;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.footerLinks h5 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footerLinks a {
+    line-height: 2em;
+    color: white;
+}
+
+.footerLinks a:hover {
+    color: white;
+    /* text-decoration: none; */
+}
+
+.copyright h5 {
+    color: white;
+}
+
+.socialLinks {
+    display: flex;
+}
+
+.socialLinks a {
+    color: white;
+    margin: 0.5em;
+}
+
+.socialLinks a:hover {
+    color: #555;
+}
+
+.scrollOnTopWrapper {
+    width: 100%;
+}
+
+.scrollOnTop {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 1em;
+}
+
+#scrollUpButton {
+    font-size: 2rem;
+    margin-right: 0.5em;
+}
+
+#scrollUpButton:focus {
+     box-shadow: none!important;
+}
+
+@media (min-width: 53em) {
+    .homeFooterContent {
+        margin-top: 1em;
+    }
+
+    .footerLinksWrapper {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    #scrollUpButton {
+        font-size: 2.5rem;
+        margin-right: 0.5em;
+    }
+
+    .socialLinks a {
+        font-size: 1.2rem;
+    }
+
+    .footerTitles h3 {
+        font-size: 1.7em;
+    }
+}
+

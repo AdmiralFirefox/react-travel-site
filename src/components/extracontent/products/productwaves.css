@@ -1,0 +1,11 @@
+.productWavesWrapper {
+  width: 100%;
+}
+
+.productWavesContainer {
+  position: absolute;
+  width: 100%;
+  bottom: -1.8em;
+  transform: rotateY(180deg);
+}
+
