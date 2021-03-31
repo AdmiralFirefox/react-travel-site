@@ -19,7 +19,6 @@
 .slick-prev::before,
 .slick-next::before {
   color: #555 !important;
-  font-size: 3rem;
 }
 
 .carouselSlides img {
