@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./signup.css";
-import Pen from "../../extracontent/signup/signupassets/pen.png";
+import PenLogo from "../../extracontent/signup/signupassets/penLogo.png";
 import Card, { CardMedia } from "@material/react-card";
 import { Form, Row, Col, Button } from "react-bootstrap";
 import SignUpCardCompile from "../../extracontent/signup/signupcardscompile";
@@ -30,7 +30,7 @@ class SignUp extends Component {
 
               <div className="signUpCardContent">
                 <Card id="cardContent">
-                  <CardMedia square imageUrl={Pen} id="penImg" />
+                  <CardMedia square imageUrl={PenLogo} id="penImg" />
                   <h1>Sign Up</h1>
                   <h4>Please Fill the Needed Forms</h4>
 
