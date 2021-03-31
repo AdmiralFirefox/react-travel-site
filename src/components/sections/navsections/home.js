@@ -4,6 +4,10 @@ import HomeTwo from "../../extracontent/home/homeparttwo";
 import { Link } from "react-scroll";
 
 class Home extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <div className="homeContentWrapper" id="homeContent">
