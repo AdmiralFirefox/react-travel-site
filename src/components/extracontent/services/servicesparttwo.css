@@ -1,16 +1,16 @@
 .servicesPartTwoWrapper {
-    position: absolute;
-    width: 100%;
-    top: 100%;
+  position: absolute;
+  width: 100%;
+  top: 100%;
 }
 
 .servicesPartTwoContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .servicesPartTwoContent h1 {
-    margin-top: 0.5em;
+  margin-top: 0.5em;
 }
