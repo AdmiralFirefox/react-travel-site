@@ -68,25 +68,25 @@ class HomeFooter extends Component {
           <div className="socialLinks">
             <div>
               <a href="/">
-                <i class="fab fa-facebook-f"></i>
+                <i className="fab fa-facebook-f"></i>
               </a>
             </div>
 
             <div>
               <a href="/">
-                <i class="fab fa-youtube"></i>
+                <i className="fab fa-youtube"></i>
               </a>
             </div>
 
             <div>
               <a href="/">
-                <i class="fab fa-instagram"></i>
+                <i className="fab fa-instagram"></i>
               </a>
             </div>
 
             <div>
               <a href="/">
-                <i class="fab fa-twitter"></i>
+                <i className="fab fa-twitter"></i>
               </a>
             </div>
           </div>
@@ -103,7 +103,7 @@ class HomeFooter extends Component {
                   duration={500}
                 >
                   <Button variant="outline-light" id="scrollUpButton">
-                    <i class="fas fa-arrow-up"></i>
+                    <i className="fas fa-arrow-up"></i>
                   </Button>
                 </Link>
               </Fade>

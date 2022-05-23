@@ -38,7 +38,6 @@ class Home extends Component {
             </Link>
           </div>
         </div>
-        {/* <BackgroundVideo /> */}
         <HomeTwo />
       </div>
     );
